@@ -1,11 +1,9 @@
 class ContactMailer < ActionMailer::Base
-    default to: 'zdbudge@gmail.com'
-    
-    def contact_email(name, email, body)
-        @name = name
-        @email = email
-        @body = body
-        
-        mail(from: email, subject: 'Contact Form Message')
-    end
+  default to: 'your@email_address.com'
+  def contact_email(name, email, body)
+    @name = name
+    @email = email
+    @body = body
+    mail(from: email, subject: 'Contact Form Message')
+  end
 end
