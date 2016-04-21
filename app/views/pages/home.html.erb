@@ -2,3 +2,21 @@
     <h1>Welcome to Diggibank!</h1>
     <h3>Save up your spare change for your next purchase</h3>
 </div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="well">
+            <h2 class="text-center">Basic Membership</h2>
+            <h4>Sign up for free and get basic service.</h4>
+            <br/>
+            <br/>
+            <%= link_to "Sign up with Basic", new_user_registration_path, class: 'btn btn-primary btn-lg btn-block' %>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="well">
+            <h2 class="text-center">Pro Membership</h2>
+            <h4>Sign up for our Pro Membership for $10/month and receive discounts from associated vendors, along with goals and reminders to help you save towards a specific purchase.</h4>
+            <%= link_to "Sign up with Pro", new_user_registration_path, class: 'btn btn-success btn-lg btn-block' %>
+        </div>
+    </div>
+</div>
